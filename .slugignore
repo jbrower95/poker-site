@@ -1,0 +1,10 @@
+# ignore all unbuilt sources
+
+src/
+client/
+
+# all build files
+
+Makefile
+README.md
+.gitignore

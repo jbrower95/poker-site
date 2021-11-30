@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "../resources/server",
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "*.ts",
+    "api/*.ts",
+    "api/v1/*.ts"
+  ],
+  "exclude": [
+    "client",
+    "worker"
+  ]
+}

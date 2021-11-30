@@ -1,0 +1,65 @@
+{
+  "name": "jacknine",
+  "description": "A backend for a poker app",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Jay Brower",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "projects": [
+      "test/unit/jest.config.js",
+      "test/integration/jest.config.js"
+    ]
+  },
+  "scripts": {
+    "test": "make test",
+    "posttest": "npm run lint",
+    "lint": "tslint -p src/",
+    "start": "node ./build/server/index.js",
+    "deploy": "gcloud app deploy"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/chai": "^4.2.11",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/express-ws": "^3.0.0",
+    "@types/ioredis": "^4.16.2",
+    "@types/jest": "^25.2.1",
+    "@types/mongoose": "^5.7.14",
+    "@types/socket.io": "^2.1.4",
+    "axios": "^0.19.2",
+    "chai-as-promised": "^7.1.1",
+    "cookie-parser": "^1.4.5",
+    "crypto-random-string": "^3.2.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "ioredis": "^4.16.3",
+    "jest": "^26.0.1",
+    "mongoose": "^5.9.9",
+    "path": "^0.12.7",
+    "pokersolver": "^2.1.3",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-rounded-image": "^2.0.2",
+    "react-scripts": "3.4.1",
+    "socket.io": "^2.3.0",
+    "source-map-support": "^0.5.19",
+    "ts-jest": "^25.5.0",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.4",
+    "chai": "^4.2.0",
+    "mongodb-memory-server": "^6.5.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3",
+    "wait-port": "^0.2.7"
+  }
+}
